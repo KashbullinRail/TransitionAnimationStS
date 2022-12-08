@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import com.example.transitionanimationsts.R
+import kotlinx.android.synthetic.main.fragment_first.view.*
 
 
 class FirstFragment : Fragment() {
@@ -18,7 +19,7 @@ class FirstFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_first, container, false)
 
-        view.findViewById<Button>(R.id.btnFirstGoHome).setOnClickListener {
+        view.btnFirstGoHome.setOnClickListener {
             findNavController().navigate(R.id.action_firstFragment_to_thirdFragment)
         }
 
