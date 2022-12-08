@@ -6,16 +6,17 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setupActionBarWithNavController(findNavController(R.id.fragmentContainerView))
+        setupActionBarWithNavController(findNavController(R.id.fragmentCont))
 
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.fragmentContainerView)
+        val navController = findNavController(R.id.fragmentCont)
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
