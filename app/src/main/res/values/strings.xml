@@ -11,6 +11,7 @@
     <string name="second_fragment_new">Second Fragment</string>
     <string name="go_second"><![CDATA[Go Second >]]></string>
     <string name="go_one"><![CDATA[< Go One]]></string>
+    <string name="animation">Animation</string>
 
 
 </resources>
